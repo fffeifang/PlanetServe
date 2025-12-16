@@ -1,0 +1,72 @@
+# PlanetServe Demo - Local Configuration
+
+
+# S-IDA Parameters
+sida:
+  n: 4           # Number of shares/paths
+  k: 3           # Threshold for reconstruction
+
+# Model Node Configuration
+model_node:
+  ip: 127.0.0.1
+  port: 9000
+  model_path: models/Llama-3.2-1B-Instruct-Q4_K_M.gguf
+
+# Verification Node Configuration  
+verifier_node:
+  ip: 127.0.0.1
+  port: 9100
+
+# User Node Configuration
+user_node:
+  ip: 127.0.0.1
+  port: 9200
+
+# Relay Paths Configuration
+# Each path has 3 hops (onion routing style)
+# Path 0: 9300 → 9301 → 9302 → Model
+# Path 1: 9310 → 9311 → 9312 → Model
+# Path 2: 9320 → 9321 → 9322 → Model
+# Path 3: 9330 → 9331 → 9332 → Model
+
+relay_paths:
+  - path_id: 0
+    hops:
+      - ip: 127.0.0.1
+        port: 9300
+      - ip: 127.0.0.1
+        port: 9301
+      - ip: 127.0.0.1
+        port: 9302
+        
+  - path_id: 1
+    hops:
+      - ip: 127.0.0.1
+        port: 9310
+      - ip: 127.0.0.1
+        port: 9311
+      - ip: 127.0.0.1
+        port: 9312
+        
+  - path_id: 2
+    hops:
+      - ip: 127.0.0.1
+        port: 9320
+      - ip: 127.0.0.1
+        port: 9321
+      - ip: 127.0.0.1
+        port: 9322
+        
+  - path_id: 3
+    hops:
+      - ip: 127.0.0.1
+        port: 9330
+      - ip: 127.0.0.1
+        port: 9331
+      - ip: 127.0.0.1
+        port: 9332
+
+# Logging
+logging:
+  verbose: true
+  log_dir: logs/demo

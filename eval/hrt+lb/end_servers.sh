@@ -1,0 +1,1 @@
+pkill -f vllm.entrypoints.openai.api_server
