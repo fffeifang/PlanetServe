@@ -42,7 +42,7 @@ Each directory includes its own `README.md` with detailed documentation.
 
 ### Evaluation
 
-- **[`eval/`](eval/README.md)**  
+- **eval**  
   Scripts and configurations for evaluation.
 
   - **[`hrt+lb/`](eval/hrt+lb/README.md)**  
