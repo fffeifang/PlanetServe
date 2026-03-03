@@ -1,5 +1,17 @@
 ## PlanetServe: A Decentralized, Scalable, and Privacy-Preserving Overlay for Democratizing Large Language Model Serving 
 
+<p align="center">
+  <a href="https://secartifacts.github.io/usenixsec2025/badges">
+    <img src="https://secartifacts.github.io/images/usenixbadges-available.svg" alt="USENIX AE: Artifacts Available" height="72">
+  </a>
+  <a href="https://secartifacts.github.io/usenixsec2025/badges">
+    <img src="https://secartifacts.github.io/images/usenixbadges-functional.svg" alt="USENIX AE: Artifacts Functional" height="72">
+  </a>
+  <a href="https://secartifacts.github.io/usenixsec2025/badges">
+    <img src="https://secartifacts.github.io/images/usenixbadges-reproduced.svg" alt="USENIX AE: Results Reproduced" height="72">
+  </a>
+</p>
+
 Welcome to **PlanetServe**, an Open LLM serving overlay that harnesses computing resources from decentralized contributors.
 
 ## 📃 Overview
@@ -59,3 +71,27 @@ Each directory includes its own `README.md` with detailed documentation.
 
   - **[`workload/`](eval/workload/README.md)**  
     Prototype for scheduling and load balancing logic.
+
+## Citation
+
+If you use PlanetServe in your research, please cite:
+
+```bibtex
+@inproceedings{fang2026planetserve,
+  title     = {PlanetServe: A Decentralized, Scalable, and Privacy-Preserving Overlay for Democratizing Large Language Model Serving},
+  author    = {Fang, Fei and Hua, Yifan and Wang, Shengze and Zhou, Ruilin and Liu, Yi and Qian, Chen and Zhang, Xiaoxue},
+  booktitle = {Proceedings of the 23rd USENIX Symposium on Networked Systems Design and Implementation (NSDI '26)},
+  year      = {2026},
+  address   = {Renton, WA, USA},
+  month     = may,
+}
+
+@misc{fang2025planetserve_arxiv,
+  title         = {PlanetServe: A Decentralized, Scalable, and Privacy-Preserving Overlay for Democratizing Large Language Model Serving},
+  author        = {Fang, Fei and Hua, Yifan and Wang, Shengze and Zhou, Ruilin and Liu, Yi and Qian, Chen and Zhang, Xiaoxue},
+  year          = {2025},
+  eprint        = {2504.20101},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.DC},
+  doi           = {10.48550/arXiv.2504.20101}
+}
